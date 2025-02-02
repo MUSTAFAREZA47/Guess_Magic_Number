@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-3xl font-bold text-center text-indigo-600 mb-4">Magical Number 🎲</h1>
+        
+        <div id="game-message" class="mb-4 text-lg text-center text-gray-700 font-bold">
+            Guess a number between 1 and 100. <br /> You have  <span id="remaining-chances" class="text-red-700">5</span> chances left.
+        </div>
+        
+        <input id="guess" type="number" min="1" max="100" class="w-full p-2 mb-4 text-xl text-center border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Enter your guess" />
+        
+        <button id="submit" class="w-full py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-300">Submit Guess</button>
+        
+        <div id="response-message" class="mt-4 text-center text-lg text-gray-700"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
